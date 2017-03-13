@@ -1,7 +1,7 @@
 async function test() {
   console.log('antes')
-  await waitForMe();
-  console.log('before') 
+  const something = await waitForMe(); // this is the response in waitForMe Promise
+  console.log('before')
 }
 
 function waitForMe() {

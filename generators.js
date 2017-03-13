@@ -2,7 +2,7 @@ const co = require('co');
 
 function* test() {
   console.log('antes')
-  yield waitForMe();
+  const something = yield waitForMe(); // this is the response in waitForMe Promise
   console.log('before')
 }
 
